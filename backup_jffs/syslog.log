@@ -1,0 +1,268 @@
+May  5 12:05:16 rc_service: ip-up 410:notify_rc start_ntpd
+May  5 12:05:16 rc_service: waitting "stop_ntpd" via ip-up ...
+May  5 12:05:17 WAN_Connection: WAN was restored.
+May  5 12:05:17 dnsmasq[219]: read /etc/hosts - 6 addresses
+May  5 12:05:17 dnsmasq[219]: read /etc/hosts.dnsmasq - 0 addresses
+May  5 12:05:17 dnsmasq[219]: using nameserver 127.0.1.1#53
+May  5 12:05:17 dnsmasq[219]: using only locally-known addresses for domain lighthouse
+May  5 12:05:18 ntpd: Started ntpd
+May  5 12:05:19 miniupnpd[538]: HTTP listening on port 50326
+May  5 12:05:19 miniupnpd[538]: Listening for NAT-PMP/PCP traffic on port 5351
+Aug 17 03:02:27 ntpd: Initial clock set
+Aug 17 03:02:27 rc_service: ntpd_synced 547:notify_rc restart_stubby
+Aug 17 03:02:27 rc_service: ntpd_synced 547:notify_rc restart_diskmon
+Aug 17 03:02:27 rc_service: waitting "restart_stubby" via ntpd_synced ...
+Aug 17 03:02:29 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 03:02:29 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 03:02:29 disk_monitor: Finish
+Aug 17 03:02:29 start_ddns: update WWW.ASUS.COM update@asus.com, wan_unit 0
+Aug 17 03:02:30 inadyn[569]: In-a-dyn version 2.7 -- Dynamic DNS update client.
+Aug 17 03:02:31 inadyn[569]: Update forced for alias sinhledinh.asuscomm.com, new IP# 113.165.154.54
+Aug 17 03:02:32 disk_monitor: be idle
+Aug 17 03:02:33 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FC:6B:F0:49:08:C1, status: Successful (0)
+Aug 17 03:02:33 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FC:6B:F0:49:08:C1, status: Successful (0)
+Aug 17 03:02:35 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FC:6B:F0:4A:79:32, status: Successful (0)
+Aug 17 03:02:35 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FC:6B:F0:4A:79:32, status: Successful (0)
+Aug 17 03:02:36 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FC:6B:F0:4D:7F:A6, status: Successful (0)
+Aug 17 03:02:36 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FC:6B:F0:4D:7F:A6, status: Successful (0)
+Aug 17 03:02:39 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:49:08:c1 
+Aug 17 03:02:39 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:41 inadyn[569]: Failed connecting to ns1.asuscomm.com: Operation now in progress
+Aug 17 03:02:42 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4a:79:32 
+Aug 17 03:02:42 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
+Aug 17 03:02:43 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 60:03:08:DC:DA:5D, status: Successful (0)
+Aug 17 03:02:43 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 60:03:08:DC:DA:5D, status: Successful (0)
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:49:08:c1 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4a:79:32 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.199 fc:6b:f0:4a:79:32 GWIPC-20771587
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
+Aug 17 03:02:45 nat: apply nat rules (/tmp/nat_rules_ppp0_eth0)
+Aug 17 03:02:46 zcip_client: configured 169.254.183.83
+Aug 17 03:02:46 syslog: WLCEVENTD wlceventd_proc_event(481): eth2: Disassoc 60:03:08:DC:DA:5D, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 03:02:48 dnsmasq[219]: read /etc/hosts - 6 addresses
+Aug 17 03:02:48 dnsmasq[219]: read /etc/hosts.dnsmasq - 0 addresses
+Aug 17 03:02:48 dnsmasq[219]: using nameserver 127.0.1.1#53
+Aug 17 03:02:48 dnsmasq[219]: using only locally-known addresses for domain lighthouse
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.199 fc:6b:f0:4a:79:32 GWIPC-20771587
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 GWIPC-5307651
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 GWIPC-5307651
+Aug 17 03:03:05 crond[227]: time disparity of 1201857 minutes detected
+Aug 17 03:03:32 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Aug 17 03:03:32 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Aug 17 03:03:47 watchdog: New firmware version 384.19_0 is available.
+Aug 17 03:05:00 rc_service: service 917:notify_rc restart_letsencrypt
+Aug 17 03:05:07 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
+Aug 17 03:05:07 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
+Aug 17 03:05:28 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth F0:98:9D:B6:3E:ED, status: Successful (0)
+Aug 17 03:05:28 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc F0:98:9D:B6:3E:ED, status: Successful (0)
+Aug 17 03:05:29 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.63 f0:98:9d:b6:3e:ed 
+Aug 17 03:05:29 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.63 f0:98:9d:b6:3e:ed tonys-iPhone
+Aug 17 03:10:00 rc_service: service 1313:notify_rc restart_letsencrypt
+Aug 17 03:14:48 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 72:2C:B2:D1:F8:F8, status: Successful (0)
+Aug 17 03:14:48 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 72:2C:B2:D1:F8:F8, status: Successful (0)
+Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 72:2c:b2:d1:f8:f8 
+Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
+Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 72:2c:b2:d1:f8:f8 
+Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
+Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
+Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 Galaxy-S10
+Aug 17 03:15:00 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 60:03:08:DC:DA:5D, status: Successful (0)
+Aug 17 03:15:00 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 60:03:08:DC:DA:5D, status: Successful (0)
+Aug 17 03:15:00 rc_service: service 1701:notify_rc restart_letsencrypt
+Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
+Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
+Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 03:15:04 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 03:15:04 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.200 60:03:08:dc:da:5d Lotus-hotel
+Aug 17 03:20:00 rc_service: service 2083:notify_rc restart_letsencrypt
+Aug 17 03:25:00 rc_service: service 2463:notify_rc restart_letsencrypt
+Aug 17 03:30:00 rc_service: service 2841:notify_rc restart_letsencrypt
+Aug 17 03:35:00 rc_service: service 3222:notify_rc restart_letsencrypt
+Aug 17 03:36:33 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc 7C:50:49:38:6B:80, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Aug 17 03:40:00 rc_service: service 3608:notify_rc restart_letsencrypt
+Aug 17 03:45:00 rc_service: service 3989:notify_rc restart_letsencrypt
+Aug 17 03:50:00 rc_service: service 4372:notify_rc restart_letsencrypt
+Aug 17 03:55:00 rc_service: service 4752:notify_rc restart_letsencrypt
+Aug 17 04:00:00 rc_service: service 5129:notify_rc restart_letsencrypt
+Aug 17 04:05:00 rc_service: service 5512:notify_rc restart_letsencrypt
+Aug 17 04:10:00 rc_service: service 5892:notify_rc restart_letsencrypt
+Aug 17 04:15:00 rc_service: service 6272:notify_rc restart_letsencrypt
+Aug 17 04:20:00 rc_service: service 6648:notify_rc restart_letsencrypt
+Aug 17 04:25:00 rc_service: service 7029:notify_rc restart_letsencrypt
+Aug 17 04:27:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 04:27:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 04:27:04 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
+Aug 17 04:27:04 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
+Aug 17 04:30:01 rc_service: service 7416:notify_rc restart_letsencrypt
+Aug 17 04:35:01 rc_service: service 7799:notify_rc restart_letsencrypt
+Aug 17 04:40:01 rc_service: service 8179:notify_rc restart_letsencrypt
+Aug 17 04:45:01 rc_service: service 8563:notify_rc restart_letsencrypt
+Aug 17 04:50:01 rc_service: service 8939:notify_rc restart_letsencrypt
+Aug 17 04:55:01 rc_service: service 9321:notify_rc restart_letsencrypt
+Aug 17 05:00:01 rc_service: service 9700:notify_rc restart_letsencrypt
+Aug 17 05:05:01 rc_service: service 10084:notify_rc restart_letsencrypt
+Aug 17 05:10:01 rc_service: service 10460:notify_rc restart_letsencrypt
+Aug 17 05:15:01 rc_service: service 10846:notify_rc restart_letsencrypt
+Aug 17 05:16:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 05:16:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 Samsung
+Aug 17 05:20:01 rc_service: service 11237:notify_rc restart_letsencrypt
+Aug 17 05:25:01 rc_service: service 11616:notify_rc restart_letsencrypt
+Aug 17 05:30:01 rc_service: service 11997:notify_rc restart_letsencrypt
+Aug 17 05:31:47 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:38:96:5C:C3:05, status: Successful (0)
+Aug 17 05:31:47 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:38:96:5C:C3:05, status: Successful (0)
+Aug 17 05:31:47 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.247 c0:38:96:5c:c3:05 
+Aug 17 05:31:47 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.247 c0:38:96:5c:c3:05 ADMIN-PC
+Aug 17 05:35:01 rc_service: service 12387:notify_rc restart_letsencrypt
+Aug 17 05:40:01 rc_service: service 12767:notify_rc restart_letsencrypt
+Aug 17 05:45:01 rc_service: service 13152:notify_rc restart_letsencrypt
+Aug 17 05:46:49 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 60:03:08:DC:DA:5D, status: Successful (0)
+Aug 17 05:46:49 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 60:03:08:DC:DA:5D, status: Successful (0)
+Aug 17 05:46:49 syslog: WLCEVENTD wlceventd_proc_event(481): eth2: Disassoc 60:03:08:DC:DA:5D, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Aug 17 05:46:49 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
+Aug 17 05:46:49 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 05:46:50 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.200 60:03:08:dc:da:5d 
+Aug 17 05:46:50 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.200 60:03:08:dc:da:5d Lotus-hotel
+Aug 17 05:50:01 rc_service: service 13540:notify_rc restart_letsencrypt
+Aug 17 05:51:37 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc C0:38:96:5C:C3:05, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Aug 17 05:55:00 rc_service: service 13923:notify_rc restart_letsencrypt
+Aug 17 06:00:00 rc_service: service 14308:notify_rc restart_letsencrypt
+Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 64:1c:ae:8e:47:83 
+Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 06:05:00 rc_service: service 14710:notify_rc restart_letsencrypt
+Aug 17 06:10:00 rc_service: service 15087:notify_rc restart_letsencrypt
+Aug 17 06:15:00 rc_service: service 15469:notify_rc restart_letsencrypt
+Aug 17 06:20:00 rc_service: service 15848:notify_rc restart_letsencrypt
+Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 64:1c:ae:8e:47:83 
+Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 06:25:00 rc_service: service 16250:notify_rc restart_letsencrypt
+Aug 17 06:30:00 rc_service: service 16634:notify_rc restart_letsencrypt
+Aug 17 06:35:00 rc_service: service 17015:notify_rc restart_letsencrypt
+Aug 17 06:40:00 rc_service: service 17391:notify_rc restart_letsencrypt
+Aug 17 06:45:00 rc_service: service 17773:notify_rc restart_letsencrypt
+Aug 17 06:50:00 rc_service: service 18153:notify_rc restart_letsencrypt
+Aug 17 06:55:00 rc_service: service 18533:notify_rc restart_letsencrypt
+Aug 17 07:00:00 rc_service: service 18911:notify_rc restart_letsencrypt
+Aug 17 07:05:00 rc_service: service 19299:notify_rc restart_letsencrypt
+Aug 17 07:10:00 rc_service: service 19681:notify_rc restart_letsencrypt
+Aug 17 07:15:00 rc_service: service 20065:notify_rc restart_letsencrypt
+Aug 17 07:20:00 rc_service: service 20444:notify_rc restart_letsencrypt
+Aug 17 07:25:00 rc_service: service 20824:notify_rc restart_letsencrypt
+Aug 17 07:30:00 rc_service: service 21201:notify_rc restart_letsencrypt
+Aug 17 07:35:00 rc_service: service 21582:notify_rc restart_letsencrypt
+Aug 17 07:40:00 rc_service: service 21962:notify_rc restart_letsencrypt
+Aug 17 07:45:00 rc_service: service 22341:notify_rc restart_letsencrypt
+Aug 17 07:50:00 rc_service: service 22721:notify_rc restart_letsencrypt
+Aug 17 07:55:00 rc_service: service 23101:notify_rc restart_letsencrypt
+Aug 17 07:59:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Disassociated due to inactivity (4)
+Aug 17 08:00:00 rc_service: service 23480:notify_rc restart_letsencrypt
+Aug 17 08:00:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Aug 17 08:05:00 rc_service: service 23868:notify_rc restart_letsencrypt
+Aug 17 08:07:11 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C4:B3:01:18:6D:35, status: Successful (0)
+Aug 17 08:07:11 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C4:B3:01:18:6D:35, status: Successful (0)
+Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Aug 17 08:07:15 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Aug 17 08:07:15 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
+Aug 17 08:10:00 rc_service: service 24251:notify_rc restart_letsencrypt
+Aug 17 08:12:21 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Aug 17 08:12:21 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Aug 17 08:14:11 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Aug 17 08:14:11 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Aug 17 08:14:12 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Aug 17 08:14:12 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Aug 17 08:14:13 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Aug 17 08:14:13 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
+Aug 17 08:15:00 rc_service: service 24648:notify_rc restart_letsencrypt
+Aug 17 08:20:00 rc_service: service 25033:notify_rc restart_letsencrypt
+Aug 17 08:22:51 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 08:22:51 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 08:22:51 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 7c:50:49:38:6b:80 
+Aug 17 08:22:51 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.92 7c:50:49:38:6b:80 
+Aug 17 08:22:52 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
+Aug 17 08:22:52 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
+Aug 17 08:25:00 rc_service: service 25420:notify_rc restart_letsencrypt
+Aug 17 08:25:27 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
+Aug 17 08:25:27 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
+Aug 17 08:25:33 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
+Aug 17 08:25:33 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
+Aug 17 08:25:58 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C4:B3:01:18:6D:35, status: 0, reason: Disassociated due to inactivity (4)
+Aug 17 08:30:00 rc_service: service 25810:notify_rc restart_letsencrypt
+Aug 17 08:35:00 rc_service: service 26192:notify_rc restart_letsencrypt
+Aug 17 08:40:00 rc_service: service 26579:notify_rc restart_letsencrypt
+Aug 17 08:40:09 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DC:A6:32:21:B3:51, status: Successful (0)
+Aug 17 08:40:09 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DC:A6:32:21:B3:51, status: Successful (0)
+Aug 17 08:40:10 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.12 dc:a6:32:21:b3:51 
+Aug 17 08:40:10 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.12 dc:a6:32:21:b3:51 raspberrypi
+Aug 17 08:45:00 rc_service: service 26973:notify_rc restart_letsencrypt
+Aug 17 08:45:54 rc_service: httpd 246:notify_rc restart_ddns_le
+Aug 17 08:45:55 start_ddns: update WWW.ASUS.COM update@asus.com, wan_unit 0
+Aug 17 08:45:55 inadyn[27064]: In-a-dyn version 2.7 -- Dynamic DNS update client.
+Aug 17 08:45:55 inadyn[27064]: Update forced for alias sinhledinh.asuscomm.com, new IP# 113.165.154.54
+Aug 17 08:45:57 inadyn[27064]: Updating cache for sinhledinh.asuscomm.com
+Aug 17 08:47:50 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Aug 17 08:49:24 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Aug 17 08:49:24 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Aug 17 08:50:59 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind F0:98:9D:B6:3E:ED, status: 0, reason: Disassociated due to inactivity (4)
+Aug 17 09:12:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Disassociated due to inactivity (4)
+Aug 17 09:12:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Aug 17 09:12:17 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(510): eth1: ReAssoc 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 09:12:33 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Aug 17 09:14:01 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 09:14:01 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
+Aug 17 09:14:03 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
+Aug 17 09:14:03 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
+Aug 17 09:15:54 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 09:15:54 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 
+Aug 17 09:25:30 rc_service: httpd 246:notify_rc start_release_note RT-AC68U 384_19_0
+Aug 17 09:31:08 rc_service: httpd 246:notify_rc start_release_note RT-AC68U 384_19_0
+Aug 17 09:33:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
