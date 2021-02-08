@@ -1,268 +1,596 @@
-May  5 12:05:16 rc_service: ip-up 410:notify_rc start_ntpd
-May  5 12:05:16 rc_service: waitting "stop_ntpd" via ip-up ...
-May  5 12:05:17 WAN_Connection: WAN was restored.
-May  5 12:05:17 dnsmasq[219]: read /etc/hosts - 6 addresses
-May  5 12:05:17 dnsmasq[219]: read /etc/hosts.dnsmasq - 0 addresses
-May  5 12:05:17 dnsmasq[219]: using nameserver 127.0.1.1#53
-May  5 12:05:17 dnsmasq[219]: using only locally-known addresses for domain lighthouse
-May  5 12:05:18 ntpd: Started ntpd
-May  5 12:05:19 miniupnpd[538]: HTTP listening on port 50326
-May  5 12:05:19 miniupnpd[538]: Listening for NAT-PMP/PCP traffic on port 5351
-Aug 17 03:02:27 ntpd: Initial clock set
-Aug 17 03:02:27 rc_service: ntpd_synced 547:notify_rc restart_stubby
-Aug 17 03:02:27 rc_service: ntpd_synced 547:notify_rc restart_diskmon
-Aug 17 03:02:27 rc_service: waitting "restart_stubby" via ntpd_synced ...
-Aug 17 03:02:29 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 03:02:29 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 03:02:29 disk_monitor: Finish
-Aug 17 03:02:29 start_ddns: update WWW.ASUS.COM update@asus.com, wan_unit 0
-Aug 17 03:02:30 inadyn[569]: In-a-dyn version 2.7 -- Dynamic DNS update client.
-Aug 17 03:02:31 inadyn[569]: Update forced for alias sinhledinh.asuscomm.com, new IP# 113.165.154.54
-Aug 17 03:02:32 disk_monitor: be idle
-Aug 17 03:02:33 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FC:6B:F0:49:08:C1, status: Successful (0)
-Aug 17 03:02:33 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FC:6B:F0:49:08:C1, status: Successful (0)
-Aug 17 03:02:35 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FC:6B:F0:4A:79:32, status: Successful (0)
-Aug 17 03:02:35 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FC:6B:F0:4A:79:32, status: Successful (0)
-Aug 17 03:02:36 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FC:6B:F0:4D:7F:A6, status: Successful (0)
-Aug 17 03:02:36 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FC:6B:F0:4D:7F:A6, status: Successful (0)
-Aug 17 03:02:39 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:49:08:c1 
-Aug 17 03:02:39 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:41 inadyn[569]: Failed connecting to ns1.asuscomm.com: Operation now in progress
-Aug 17 03:02:42 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4a:79:32 
-Aug 17 03:02:42 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
-Aug 17 03:02:43 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 60:03:08:DC:DA:5D, status: Successful (0)
-Aug 17 03:02:43 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 60:03:08:DC:DA:5D, status: Successful (0)
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:49:08:c1 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4a:79:32 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.199 fc:6b:f0:4a:79:32 GWIPC-20771587
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:45 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
-Aug 17 03:02:45 nat: apply nat rules (/tmp/nat_rules_ppp0_eth0)
-Aug 17 03:02:46 zcip_client: configured 169.254.183.83
-Aug 17 03:02:46 syslog: WLCEVENTD wlceventd_proc_event(481): eth2: Disassoc 60:03:08:DC:DA:5D, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 03:02:48 dnsmasq[219]: read /etc/hosts - 6 addresses
-Aug 17 03:02:48 dnsmasq[219]: read /etc/hosts.dnsmasq - 0 addresses
-Aug 17 03:02:48 dnsmasq[219]: using nameserver 127.0.1.1#53
-Aug 17 03:02:48 dnsmasq[219]: using only locally-known addresses for domain lighthouse
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.199 fc:6b:f0:4a:79:32 GWIPC-20771587
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 GWIPC-5307651
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
-Aug 17 03:02:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 GWIPC-5307651
-Aug 17 03:03:05 crond[227]: time disparity of 1201857 minutes detected
-Aug 17 03:03:32 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
-Aug 17 03:03:32 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
-Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
-Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
-Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
-Aug 17 03:03:36 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
-Aug 17 03:03:47 watchdog: New firmware version 384.19_0 is available.
-Aug 17 03:05:00 rc_service: service 917:notify_rc restart_letsencrypt
-Aug 17 03:05:07 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
-Aug 17 03:05:07 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
-Aug 17 03:05:28 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth F0:98:9D:B6:3E:ED, status: Successful (0)
-Aug 17 03:05:28 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc F0:98:9D:B6:3E:ED, status: Successful (0)
-Aug 17 03:05:29 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.63 f0:98:9d:b6:3e:ed 
-Aug 17 03:05:29 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.63 f0:98:9d:b6:3e:ed tonys-iPhone
-Aug 17 03:10:00 rc_service: service 1313:notify_rc restart_letsencrypt
-Aug 17 03:14:48 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 72:2C:B2:D1:F8:F8, status: Successful (0)
-Aug 17 03:14:48 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 72:2C:B2:D1:F8:F8, status: Successful (0)
-Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 72:2c:b2:d1:f8:f8 
-Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
-Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 72:2c:b2:d1:f8:f8 
-Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
-Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
-Aug 17 03:14:52 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 Galaxy-S10
-Aug 17 03:15:00 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 60:03:08:DC:DA:5D, status: Successful (0)
-Aug 17 03:15:00 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 60:03:08:DC:DA:5D, status: Successful (0)
-Aug 17 03:15:00 rc_service: service 1701:notify_rc restart_letsencrypt
-Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
-Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
-Aug 17 03:15:03 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 03:15:04 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 03:15:04 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.200 60:03:08:dc:da:5d Lotus-hotel
-Aug 17 03:20:00 rc_service: service 2083:notify_rc restart_letsencrypt
-Aug 17 03:25:00 rc_service: service 2463:notify_rc restart_letsencrypt
-Aug 17 03:30:00 rc_service: service 2841:notify_rc restart_letsencrypt
-Aug 17 03:35:00 rc_service: service 3222:notify_rc restart_letsencrypt
-Aug 17 03:36:33 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc 7C:50:49:38:6B:80, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
-Aug 17 03:40:00 rc_service: service 3608:notify_rc restart_letsencrypt
-Aug 17 03:45:00 rc_service: service 3989:notify_rc restart_letsencrypt
-Aug 17 03:50:00 rc_service: service 4372:notify_rc restart_letsencrypt
-Aug 17 03:55:00 rc_service: service 4752:notify_rc restart_letsencrypt
-Aug 17 04:00:00 rc_service: service 5129:notify_rc restart_letsencrypt
-Aug 17 04:05:00 rc_service: service 5512:notify_rc restart_letsencrypt
-Aug 17 04:10:00 rc_service: service 5892:notify_rc restart_letsencrypt
-Aug 17 04:15:00 rc_service: service 6272:notify_rc restart_letsencrypt
-Aug 17 04:20:00 rc_service: service 6648:notify_rc restart_letsencrypt
-Aug 17 04:25:00 rc_service: service 7029:notify_rc restart_letsencrypt
-Aug 17 04:27:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 04:27:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 04:27:04 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
-Aug 17 04:27:04 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
-Aug 17 04:30:01 rc_service: service 7416:notify_rc restart_letsencrypt
-Aug 17 04:35:01 rc_service: service 7799:notify_rc restart_letsencrypt
-Aug 17 04:40:01 rc_service: service 8179:notify_rc restart_letsencrypt
-Aug 17 04:45:01 rc_service: service 8563:notify_rc restart_letsencrypt
-Aug 17 04:50:01 rc_service: service 8939:notify_rc restart_letsencrypt
-Aug 17 04:55:01 rc_service: service 9321:notify_rc restart_letsencrypt
-Aug 17 05:00:01 rc_service: service 9700:notify_rc restart_letsencrypt
-Aug 17 05:05:01 rc_service: service 10084:notify_rc restart_letsencrypt
-Aug 17 05:10:01 rc_service: service 10460:notify_rc restart_letsencrypt
-Aug 17 05:15:01 rc_service: service 10846:notify_rc restart_letsencrypt
-Aug 17 05:16:48 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 05:16:48 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 Samsung
-Aug 17 05:20:01 rc_service: service 11237:notify_rc restart_letsencrypt
-Aug 17 05:25:01 rc_service: service 11616:notify_rc restart_letsencrypt
-Aug 17 05:30:01 rc_service: service 11997:notify_rc restart_letsencrypt
-Aug 17 05:31:47 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:38:96:5C:C3:05, status: Successful (0)
-Aug 17 05:31:47 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:38:96:5C:C3:05, status: Successful (0)
-Aug 17 05:31:47 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.247 c0:38:96:5c:c3:05 
-Aug 17 05:31:47 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.247 c0:38:96:5c:c3:05 ADMIN-PC
-Aug 17 05:35:01 rc_service: service 12387:notify_rc restart_letsencrypt
-Aug 17 05:40:01 rc_service: service 12767:notify_rc restart_letsencrypt
-Aug 17 05:45:01 rc_service: service 13152:notify_rc restart_letsencrypt
-Aug 17 05:46:49 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 60:03:08:DC:DA:5D, status: Successful (0)
-Aug 17 05:46:49 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 60:03:08:DC:DA:5D, status: Successful (0)
-Aug 17 05:46:49 syslog: WLCEVENTD wlceventd_proc_event(481): eth2: Disassoc 60:03:08:DC:DA:5D, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
-Aug 17 05:46:49 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 60:03:08:dc:da:5d 
-Aug 17 05:46:49 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 05:46:50 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.200 60:03:08:dc:da:5d 
-Aug 17 05:46:50 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.200 60:03:08:dc:da:5d Lotus-hotel
-Aug 17 05:50:01 rc_service: service 13540:notify_rc restart_letsencrypt
-Aug 17 05:51:37 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc C0:38:96:5C:C3:05, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
-Aug 17 05:55:00 rc_service: service 13923:notify_rc restart_letsencrypt
-Aug 17 06:00:00 rc_service: service 14308:notify_rc restart_letsencrypt
-Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 64:1c:ae:8e:47:83 
-Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 06:00:24 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 06:05:00 rc_service: service 14710:notify_rc restart_letsencrypt
-Aug 17 06:10:00 rc_service: service 15087:notify_rc restart_letsencrypt
-Aug 17 06:15:00 rc_service: service 15469:notify_rc restart_letsencrypt
-Aug 17 06:20:00 rc_service: service 15848:notify_rc restart_letsencrypt
-Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 64:1c:ae:8e:47:83 
-Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 06:21:56 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 06:25:00 rc_service: service 16250:notify_rc restart_letsencrypt
-Aug 17 06:30:00 rc_service: service 16634:notify_rc restart_letsencrypt
-Aug 17 06:35:00 rc_service: service 17015:notify_rc restart_letsencrypt
-Aug 17 06:40:00 rc_service: service 17391:notify_rc restart_letsencrypt
-Aug 17 06:45:00 rc_service: service 17773:notify_rc restart_letsencrypt
-Aug 17 06:50:00 rc_service: service 18153:notify_rc restart_letsencrypt
-Aug 17 06:55:00 rc_service: service 18533:notify_rc restart_letsencrypt
-Aug 17 07:00:00 rc_service: service 18911:notify_rc restart_letsencrypt
-Aug 17 07:05:00 rc_service: service 19299:notify_rc restart_letsencrypt
-Aug 17 07:10:00 rc_service: service 19681:notify_rc restart_letsencrypt
-Aug 17 07:15:00 rc_service: service 20065:notify_rc restart_letsencrypt
-Aug 17 07:20:00 rc_service: service 20444:notify_rc restart_letsencrypt
-Aug 17 07:25:00 rc_service: service 20824:notify_rc restart_letsencrypt
-Aug 17 07:30:00 rc_service: service 21201:notify_rc restart_letsencrypt
-Aug 17 07:35:00 rc_service: service 21582:notify_rc restart_letsencrypt
-Aug 17 07:40:00 rc_service: service 21962:notify_rc restart_letsencrypt
-Aug 17 07:45:00 rc_service: service 22341:notify_rc restart_letsencrypt
-Aug 17 07:50:00 rc_service: service 22721:notify_rc restart_letsencrypt
-Aug 17 07:55:00 rc_service: service 23101:notify_rc restart_letsencrypt
-Aug 17 07:59:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Disassociated due to inactivity (4)
-Aug 17 08:00:00 rc_service: service 23480:notify_rc restart_letsencrypt
-Aug 17 08:00:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
-Aug 17 08:05:00 rc_service: service 23868:notify_rc restart_letsencrypt
-Aug 17 08:07:11 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C4:B3:01:18:6D:35, status: Successful (0)
-Aug 17 08:07:11 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C4:B3:01:18:6D:35, status: Successful (0)
-Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
-Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
-Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
-Aug 17 08:07:14 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
-Aug 17 08:07:15 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
-Aug 17 08:07:15 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
-Aug 17 08:10:00 rc_service: service 24251:notify_rc restart_letsencrypt
-Aug 17 08:12:21 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
-Aug 17 08:12:21 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
-Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
-Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
-Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
-Aug 17 08:12:22 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
-Aug 17 08:14:11 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
-Aug 17 08:14:11 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
-Aug 17 08:14:12 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
-Aug 17 08:14:12 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
-Aug 17 08:14:13 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
-Aug 17 08:14:13 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
-Aug 17 08:15:00 rc_service: service 24648:notify_rc restart_letsencrypt
-Aug 17 08:20:00 rc_service: service 25033:notify_rc restart_letsencrypt
-Aug 17 08:22:51 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 08:22:51 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 08:22:51 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) 7c:50:49:38:6b:80 
-Aug 17 08:22:51 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.92 7c:50:49:38:6b:80 
-Aug 17 08:22:52 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
-Aug 17 08:22:52 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
-Aug 17 08:25:00 rc_service: service 25420:notify_rc restart_letsencrypt
-Aug 17 08:25:27 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
-Aug 17 08:25:27 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
-Aug 17 08:25:33 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
-Aug 17 08:25:33 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
-Aug 17 08:25:58 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C4:B3:01:18:6D:35, status: 0, reason: Disassociated due to inactivity (4)
-Aug 17 08:30:00 rc_service: service 25810:notify_rc restart_letsencrypt
-Aug 17 08:35:00 rc_service: service 26192:notify_rc restart_letsencrypt
-Aug 17 08:40:00 rc_service: service 26579:notify_rc restart_letsencrypt
-Aug 17 08:40:09 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DC:A6:32:21:B3:51, status: Successful (0)
-Aug 17 08:40:09 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DC:A6:32:21:B3:51, status: Successful (0)
-Aug 17 08:40:10 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.12 dc:a6:32:21:b3:51 
-Aug 17 08:40:10 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.12 dc:a6:32:21:b3:51 raspberrypi
-Aug 17 08:45:00 rc_service: service 26973:notify_rc restart_letsencrypt
-Aug 17 08:45:54 rc_service: httpd 246:notify_rc restart_ddns_le
-Aug 17 08:45:55 start_ddns: update WWW.ASUS.COM update@asus.com, wan_unit 0
-Aug 17 08:45:55 inadyn[27064]: In-a-dyn version 2.7 -- Dynamic DNS update client.
-Aug 17 08:45:55 inadyn[27064]: Update forced for alias sinhledinh.asuscomm.com, new IP# 113.165.154.54
-Aug 17 08:45:57 inadyn[27064]: Updating cache for sinhledinh.asuscomm.com
-Aug 17 08:47:50 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
-Aug 17 08:49:24 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
-Aug 17 08:49:24 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
-Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
-Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
-Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
-Aug 17 08:49:24 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
-Aug 17 08:50:59 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind F0:98:9D:B6:3E:ED, status: 0, reason: Disassociated due to inactivity (4)
-Aug 17 09:12:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Disassociated due to inactivity (4)
-Aug 17 09:12:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Class 3 frame received from nonassociated station (7)
-Aug 17 09:12:17 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Class 3 frame received from nonassociated station (7)
-Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Class 3 frame received from nonassociated station (7)
-Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 09:12:19 syslog: WLCEVENTD wlceventd_proc_event(510): eth1: ReAssoc 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 09:12:33 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 7C:50:49:38:6B:80, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
-Aug 17 09:14:01 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 09:14:01 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 7C:50:49:38:6B:80, status: Successful (0)
-Aug 17 09:14:03 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.92 7c:50:49:38:6b:80 
-Aug 17 09:14:03 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.92 7c:50:49:38:6b:80 Nhu-Thach
-Aug 17 09:15:54 dnsmasq-dhcp[219]: DHCPREQUEST(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 09:15:54 dnsmasq-dhcp[219]: DHCPACK(br0) 10.12.12.23 64:1c:ae:8e:47:83 
-Aug 17 09:25:30 rc_service: httpd 246:notify_rc start_release_note RT-AC68U 384_19_0
-Aug 17 09:31:08 rc_service: httpd 246:notify_rc start_release_note RT-AC68U 384_19_0
-Aug 17 09:33:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 06:51:20 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) a8:3e:0e:c4:5d:50 
+Feb  8 06:51:20 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.118 a8:3e:0e:c4:5d:50 
+Feb  8 06:51:20 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.118 a8:3e:0e:c4:5d:50 
+Feb  8 06:51:20 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.118 a8:3e:0e:c4:5d:50 
+Feb  8 06:59:25 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind A8:3E:0E:C4:5D:50, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 07:06:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 07:06:38 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 07:06:56 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 07:07:01 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 07:07:01 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 07:07:01 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 07:07:01 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 07:07:01 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 07:07:01 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 07:13:57 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind DE:7E:33:B5:49:E6, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 07:24:36 kernel: DROP IN=ppp0 OUT= MAC= SRC=172.105.89.161 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=54 ID=0 DF PROTO=TCP SPT=32961 DPT=80 SEQ=1 ACK=0 WINDOW=8192 RES=0x00 SYN URGP=0 
+Feb  8 07:29:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 07:52:13 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
+Feb  8 07:52:13 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
+Feb  8 07:52:13 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
+Feb  8 07:52:13 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
+Feb  8 07:52:26 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 07:52:26 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 07:52:26 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 07:52:26 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 07:52:26 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 07:52:26 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 07:54:31 kernel: DROP IN=ppp0 OUT= MAC= SRC=128.1.91.205 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=240 ID=18075 PROTO=TCP SPT=37673 DPT=80 SEQ=3465008540 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 08:06:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 08:06:20 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 08:06:38 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 08:08:32 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 08:08:32 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 08:08:32 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 08:08:32 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 08:08:32 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 08:08:32 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 08:24:24 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 08:24:24 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.170 ee:84:b2:21:f1:66 tonys-iPhone
+Feb  8 08:36:57 kernel: DROP IN=ppp0 OUT= MAC= SRC=23.148.145.28 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=60435 PROTO=TCP SPT=46717 DPT=80 SEQ=1478983444 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 08:43:58 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 08:44:01 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 08:44:01 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 08:44:01 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 08:44:01 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 08:44:01 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
+Feb  8 08:44:01 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.199 fc:6b:f0:4a:79:32 GWIPC-20771587
+Feb  8 08:47:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 08:47:54 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 08:51:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 08:51:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 08:51:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 08:51:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 08:51:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 08:51:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 08:52:10 kernel: DROP IN=ppp0 OUT= MAC= SRC=173.212.232.62 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=6587 PROTO=TCP SPT=44920 DPT=80 SEQ=2515765948 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 08:55:47 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=33092 DPT=80 SEQ=781235324 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 08:59:04 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 08:59:04 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 08:59:04 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 08:59:04 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 09:00:33 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=47223 DPT=80 SEQ=642790925 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 09:09:44 kernel: DROP IN=ppp0 OUT= MAC= SRC=109.88.185.120 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=6412 DF PROTO=TCP SPT=11126 DPT=80 SEQ=2976426086 ACK=0 WINDOW=14600 RES=0x00 SYN URGP=0 
+Feb  8 09:14:07 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:14:07 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 09:14:07 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:14:07 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 09:14:46 kernel: DROP IN=ppp0 OUT= MAC= SRC=140.143.64.191 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=51 ID=54353 PROTO=TCP SPT=14507 DPT=80 SEQ=0 ACK=0 WINDOW=4096 RES=0x00 SYN URGP=0 
+Feb  8 09:15:14 kernel: DROP IN=ppp0 OUT= MAC= SRC=139.162.108.53 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=248 ID=54321 PROTO=TCP SPT=48186 DPT=80 SEQ=2311546035 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 09:27:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 09:27:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 09:27:05 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 09:27:05 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 09:27:05 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 09:27:05 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 09:29:10 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:29:10 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 09:29:10 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:29:10 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 09:29:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 09:29:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:30:04 kernel: DROP IN=ppp0 OUT= MAC= SRC=193.32.127.227 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=243 ID=54321 PROTO=TCP SPT=52691 DPT=80 SEQ=1305780138 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 OPT (02040218) 
+Feb  8 09:31:31 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 09:31:31 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 09:31:31 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 09:31:31 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 09:31:31 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 09:31:32 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 09:31:32 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 09:31:32 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 09:31:32 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 09:33:54 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 09:33:54 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 09:33:54 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 09:33:54 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 09:33:54 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 09:33:54 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:35:50 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:37:47 kernel: DROP IN=ppp0 OUT= MAC= SRC=31.15.133.54 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=23452 DF PROTO=TCP SPT=35578 DPT=80 SEQ=237845581 ACK=0 WINDOW=14600 RES=0x00 SYN URGP=0 
+Feb  8 09:44:14 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:44:14 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 09:44:14 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:44:14 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 09:51:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 09:51:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:51:37 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:54:00 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 09:54:00 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 09:54:00 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 09:54:00 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 09:54:00 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 09:54:00 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 09:56:08 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C4:B3:01:18:6D:35, status: Successful (0)
+Feb  8 09:56:08 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C4:B3:01:18:6D:35, status: Successful (0)
+Feb  8 09:56:12 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Feb  8 09:56:12 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 09:56:12 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Feb  8 09:56:12 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 09:56:13 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 09:56:13 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
+Feb  8 09:56:14 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 09:56:14 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
+Feb  8 09:59:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 09:59:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 09:59:18 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:59:18 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 09:59:18 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 09:59:18 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 10:00:59 kernel: DROP IN=ppp0 OUT= MAC= SRC=49.115.72.73 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=55 ID=46994 DF PROTO=TCP SPT=53379 DPT=80 SEQ=160388197 ACK=0 WINDOW=5440 RES=0x00 SYN URGP=0 OPT (020405500402080A0159E3F70000000001030302) 
+Feb  8 10:01:02 kernel: DROP IN=ppp0 OUT= MAC= SRC=49.115.72.73 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=55 ID=46995 DF PROTO=TCP SPT=53379 DPT=80 SEQ=160388197 ACK=0 WINDOW=5440 RES=0x00 SYN URGP=0 OPT (020405500402080A0159E5230000000001030302) 
+Feb  8 10:02:03 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:02:03 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:02:03 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 10:02:03 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:02:03 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:02:03 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 10:05:00 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Feb  8 10:05:00 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 10:05:01 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c4:b3:01:18:6d:35 
+Feb  8 10:05:01 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 10:05:02 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.230 c4:b3:01:18:6d:35 
+Feb  8 10:05:02 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.230 c4:b3:01:18:6d:35 iPhone
+Feb  8 10:14:21 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 10:14:21 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 10:14:21 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 10:14:21 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 10:20:35 kernel: DROP IN=ppp0 OUT= MAC= SRC=5.63.151.116 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=242 ID=54321 PROTO=TCP SPT=80 DPT=80 SEQ=2710851401 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 10:29:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 10:29:24 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 10:29:24 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 10:29:24 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 10:29:24 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 10:29:58 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 10:33:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:33:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:33:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 10:33:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:33:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:33:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 10:39:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 10:39:34 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 10:39:34 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 10:39:34 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 10:42:03 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:42:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:42:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 10:42:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:42:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:42:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 10:42:57 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C4:B3:01:18:6D:35, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 10:44:27 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 10:44:27 acsd: Adjusted channel spec: 0xe09b (149/80)
+Feb  8 10:44:27 acsd: selected channel spec: 0xe09b (149/80)
+Feb  8 10:44:27 acsd: acs_set_chspec: 0xe09b (149/80) for reason APCS_CSTIMER
+Feb  8 10:48:43 kernel: DROP IN=ppp0 OUT= MAC= SRC=149.129.100.37 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=57 ID=26806 PROTO=TCP SPT=48247 DPT=80 SEQ=0 ACK=0 WINDOW=4096 RES=0x00 SYN URGP=0 
+Feb  8 10:50:55 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 10:50:55 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 10:50:55 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 10:50:55 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.170 ee:84:b2:21:f1:66 tonys-iPhone
+Feb  8 10:51:07 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DC:A6:32:21:B3:51, status: Successful (0)
+Feb  8 10:51:07 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DC:A6:32:21:B3:51, status: Successful (0)
+Feb  8 10:51:07 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) dc:a6:32:21:b3:51 
+Feb  8 10:51:07 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.12 dc:a6:32:21:b3:51 
+Feb  8 10:51:07 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.12 dc:a6:32:21:b3:51 
+Feb  8 10:51:07 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.12 dc:a6:32:21:b3:51 ubuntu
+Feb  8 10:52:33 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 10:52:34 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 10:52:34 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 10:53:34 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:53:34 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 10:53:35 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 10:53:35 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:53:35 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 10:53:35 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 11:19:19 kernel: DROP IN=ppp0 OUT= MAC= SRC=112.74.57.46 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=51 ID=31908 PROTO=TCP SPT=18814 DPT=80 SEQ=0 ACK=0 WINDOW=4096 RES=0x00 SYN URGP=0 
+Feb  8 11:40:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 11:40:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 11:40:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 11:41:07 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.6 fc:6b:f0:49:08:c1 
+Feb  8 11:41:07 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.6 fc:6b:f0:49:08:c1 GWIPC-20771869
+Feb  8 11:43:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 11:43:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 11:43:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 11:43:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 11:43:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 11:43:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 11:45:38 kernel: DROP IN=ppp0 OUT= MAC= SRC=197.156.92.216 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=51 ID=21214 DF PROTO=TCP SPT=44040 DPT=80 SEQ=1453195210 ACK=0 WINDOW=64240 RES=0x00 SYN URGP=0 OPT (020405B40402080A85167E0C0000000001030307) 
+Feb  8 11:50:23 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=53622 DPT=80 SEQ=3076802014 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 11:51:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 11:51:51 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 11:51:51 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 11:52:39 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 11:52:39 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 11:52:39 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 11:52:39 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 11:52:39 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 11:52:39 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 11:57:17 kernel: DROP IN=ppp0 OUT= MAC= SRC=111.230.178.135 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=52 ID=8651 PROTO=TCP SPT=53012 DPT=80 SEQ=0 ACK=0 WINDOW=4096 RES=0x00 SYN URGP=0 
+Feb  8 12:17:06 kernel: DROP IN=ppp0 OUT= MAC= SRC=23.148.145.28 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=42603 PROTO=TCP SPT=40976 DPT=80 SEQ=1464022380 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 12:50:54 kernel: DROP IN=ppp0 OUT= MAC= SRC=81.70.144.143 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=53 ID=63541 DF PROTO=TCP SPT=45120 DPT=80 SEQ=4124206870 ACK=0 WINDOW=29200 RES=0x00 SYN URGP=0 OPT (020405900402080A32619F230000000001030307) 
+Feb  8 12:51:05 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=55655 DPT=80 SEQ=509269237 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 12:55:12 kernel: DROP IN=ppp0 OUT= MAC= SRC=107.175.31.159 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=243 ID=55317 PROTO=TCP SPT=43745 DPT=80 SEQ=353454866 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 13:16:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 13:16:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:16:23 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:16:23 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:16:27 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:16:27 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:16:28 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 13:16:28 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:16:28 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:16:28 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 13:32:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 13:32:31 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind 92:2F:8D:2A:10:6B, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 13:32:37 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:32:38 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:35:03 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:35:03 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:35:03 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 13:35:03 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:35:03 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:35:03 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 13:36:51 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 13:36:51 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 13:36:51 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 13:36:51 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 13:36:51 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 13:36:51 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 13:43:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 13:43:26 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:46:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:46:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:46:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 13:46:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:46:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:46:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 13:48:03 kernel: DROP IN=ppp0 OUT= MAC= SRC=183.230.113.63 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=236 ID=20427 PROTO=TCP SPT=17739 DPT=80 SEQ=3905019084 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 OPT (020405B4) 
+Feb  8 13:50:39 rc_service: httpd 250:notify_rc start_release_note RT-AC68U 386_1_0
+Feb  8 13:53:22 kernel: DROP IN=ppp0 OUT= MAC= SRC=64.77.247.132 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=242 ID=13773 DF PROTO=TCP SPT=28725 DPT=80 SEQ=4293421418 ACK=0 WINDOW=14600 RES=0x00 SYN URGP=0 OPT (020405B4) 
+Feb  8 13:55:12 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 13:55:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:55:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 13:56:07 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:56:07 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 13:56:07 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 13:56:07 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:56:07 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 13:56:07 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 14:03:10 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 14:03:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 14:05:14 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 14:05:14 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 14:05:14 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 14:05:14 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 14:05:14 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 14:05:14 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 14:18:26 kernel: DROP IN=ppp0 OUT= MAC= SRC=49.143.32.6 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=52 ID=13781 DF PROTO=TCP SPT=2952 DPT=80 SEQ=514101916 ACK=0 WINDOW=5840 RES=0x00 SYN URGP=0 OPT (020405B40402080A02DCA7490000000001030301) 
+Feb  8 14:18:29 kernel: DROP IN=ppp0 OUT= MAC= SRC=49.143.32.6 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=52 ID=13782 DF PROTO=TCP SPT=2952 DPT=80 SEQ=514101916 ACK=0 WINDOW=5840 RES=0x00 SYN URGP=0 OPT (020405B40402080A02DCA8750000000001030301) 
+Feb  8 14:53:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 14:53:20 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 14:53:24 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 14:53:24 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 14:53:25 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 14:53:25 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 14:53:25 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 14:53:25 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 14:59:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 14:59:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 14:59:20 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 14:59:20 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 14:59:21 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 14:59:21 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 14:59:21 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 14:59:21 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 15:02:00 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth 72:2C:B2:D1:F8:F8, status: Successful (0)
+Feb  8 15:02:00 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc 72:2C:B2:D1:F8:F8, status: Successful (0)
+Feb  8 15:02:00 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) 72:2c:b2:d1:f8:f8 
+Feb  8 15:02:00 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
+Feb  8 15:02:00 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 
+Feb  8 15:02:00 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.213 72:2c:b2:d1:f8:f8 Galaxy-S10
+Feb  8 15:11:04 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=47432 DPT=80 SEQ=306100867 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 15:13:33 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 15:13:33 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 15:13:33 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 15:13:33 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 15:13:33 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 15:13:33 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 15:13:48 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 15:13:48 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 15:13:49 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) de:7e:33:b5:49:e6 
+Feb  8 15:13:49 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.214 de:7e:33:b5:49:e6 
+Feb  8 15:13:50 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.214 de:7e:33:b5:49:e6 
+Feb  8 15:13:50 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.214 de:7e:33:b5:49:e6 Nhu-Thach
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:15:29 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:22:01 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=52604 DPT=80 SEQ=1701077665 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 15:27:37 kernel: DROP IN=ppp0 OUT= MAC= SRC=23.148.145.28 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=19303 PROTO=TCP SPT=52363 DPT=80 SEQ=1341773920 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 15:28:57 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind DE:7E:33:B5:49:E6, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 15:29:33 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 15:29:33 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 15:29:33 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.214 de:7e:33:b5:49:e6 
+Feb  8 15:29:33 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.214 de:7e:33:b5:49:e6 Nhu-Thach
+Feb  8 15:33:55 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind DE:7E:33:B5:49:E6, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 15:50:37 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 15:50:37 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 15:50:37 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 15:50:37 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 15:50:37 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 15:50:37 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 15:51:09 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 15:51:09 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 15:51:09 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 15:51:09 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 15:51:09 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 15:51:09 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:53:05 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 15:58:58 kernel: DROP IN=ppp0 OUT= MAC= SRC=189.252.148.113 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=54421 DF PROTO=TCP SPT=59284 DPT=80 SEQ=3162186909 ACK=0 WINDOW=14600 RES=0x00 SYN URGP=0 
+Feb  8 16:04:39 kernel: DROP IN=ppp0 OUT= MAC= SRC=184.105.247.198 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=58945 DPT=80 SEQ=791101 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 16:06:59 kernel: DROP IN=ppp0 OUT= MAC= SRC=34.83.151.140 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=59 ID=1220 DF PROTO=TCP SPT=54470 DPT=80 SEQ=243777850 ACK=0 WINDOW=42600 RES=0x00 SYN URGP=0 OPT (0204058C0402080A48107D400000000001030307) 
+Feb  8 16:07:00 kernel: DROP IN=ppp0 OUT= MAC= SRC=34.83.151.140 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=59 ID=1221 DF PROTO=TCP SPT=54470 DPT=80 SEQ=243777850 ACK=0 WINDOW=42600 RES=0x00 SYN URGP=0 OPT (0204058C0402080A481081360000000001030307) 
+Feb  8 16:07:02 kernel: DROP IN=ppp0 OUT= MAC= SRC=34.83.151.140 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=59 ID=1222 DF PROTO=TCP SPT=54470 DPT=80 SEQ=243777850 ACK=0 WINDOW=42600 RES=0x00 SYN URGP=0 OPT (0204058C0402080A481089350000000001030307) 
+Feb  8 16:07:06 kernel: DROP IN=ppp0 OUT= MAC= SRC=34.83.151.140 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=59 ID=1223 DF PROTO=TCP SPT=54470 DPT=80 SEQ=243777850 ACK=0 WINDOW=42600 RES=0x00 SYN URGP=0 OPT (0204058C0402080A481098F50000000001030307) 
+Feb  8 16:07:14 kernel: DROP IN=ppp0 OUT= MAC= SRC=34.83.151.140 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=59 ID=1224 DF PROTO=TCP SPT=54470 DPT=80 SEQ=243777850 ACK=0 WINDOW=42600 RES=0x00 SYN URGP=0 OPT (0204058C0402080A4810B9B40000000001030307) 
+Feb  8 16:09:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 16:09:42 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:09:45 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 16:09:45 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 16:09:45 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 16:09:45 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.170 ee:84:b2:21:f1:66 tonys-iPhone
+Feb  8 16:10:14 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth AA:4C:48:0E:4A:79, status: Successful (0)
+Feb  8 16:10:14 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc AA:4C:48:0E:4A:79, status: Successful (0)
+Feb  8 16:10:15 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) aa:4c:48:0e:4a:79 
+Feb  8 16:10:15 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.154 aa:4c:48:0e:4a:79 
+Feb  8 16:10:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 16:10:17 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.154 aa:4c:48:0e:4a:79 
+Feb  8 16:10:17 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.154 aa:4c:48:0e:4a:79 tonys-iPhone
+Feb  8 16:16:46 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc AA:4C:48:0E:4A:79, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 16:16:47 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 16:16:47 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 16:16:48 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) ee:84:b2:21:f1:66 
+Feb  8 16:16:48 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 16:16:50 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 16:16:50 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.170 ee:84:b2:21:f1:66 tonys-iPhone
+Feb  8 16:19:55 kernel: DROP IN=ppp0 OUT= MAC= SRC=104.143.83.241 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=54 ID=4848 DF PROTO=TCP SPT=40438 DPT=80 SEQ=4080567055 ACK=0 WINDOW=29200 RES=0x00 SYN URGP=0 OPT (020405B40402080AB1B691FF0000000001030307) 
+Feb  8 16:19:56 kernel: DROP IN=ppp0 OUT= MAC= SRC=104.143.83.241 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=54 ID=4849 DF PROTO=TCP SPT=40438 DPT=80 SEQ=4080567055 ACK=0 WINDOW=29200 RES=0x00 SYN URGP=0 OPT (020405B40402080AB1B692F90000000001030307) 
+Feb  8 16:19:58 kernel: DROP IN=ppp0 OUT= MAC= SRC=104.143.83.241 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=54 ID=4850 DF PROTO=TCP SPT=40438 DPT=80 SEQ=4080567055 ACK=0 WINDOW=29200 RES=0x00 SYN URGP=0 OPT (020405B40402080AB1B694EE0000000001030307) 
+Feb  8 16:20:02 kernel: DROP IN=ppp0 OUT= MAC= SRC=104.143.83.241 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=54 ID=4851 DF PROTO=TCP SPT=40438 DPT=80 SEQ=4080567055 ACK=0 WINDOW=29200 RES=0x00 SYN URGP=0 OPT (020405B40402080AB1B698D80000000001030307) 
+Feb  8 16:22:11 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth AA:4C:48:0E:4A:79, status: Successful (0)
+Feb  8 16:22:11 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc AA:4C:48:0E:4A:79, status: Successful (0)
+Feb  8 16:22:14 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) aa:4c:48:0e:4a:79 
+Feb  8 16:22:14 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.154 aa:4c:48:0e:4a:79 
+Feb  8 16:22:19 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.154 aa:4c:48:0e:4a:79 
+Feb  8 16:22:19 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.154 aa:4c:48:0e:4a:79 tonys-iPhone
+Feb  8 16:22:51 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 16:22:51 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 16:22:57 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 16:22:57 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.214 de:7e:33:b5:49:e6 
+Feb  8 16:22:57 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.214 de:7e:33:b5:49:e6 Nhu-Thach
+Feb  8 16:24:18 kernel: DROP IN=ppp0 OUT= MAC= SRC=185.142.236.43 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=119 ID=47711 PROTO=TCP SPT=17340 DPT=80 SEQ=2558235898 ACK=0 WINDOW=4146 RES=0x00 SYN URGP=0 OPT (020405B4) 
+Feb  8 16:37:32 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc AA:4C:48:0E:4A:79, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 16:37:32 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 16:37:32 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 16:37:33 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) ee:84:b2:21:f1:66 
+Feb  8 16:37:33 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 16:37:35 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 16:37:35 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.170 ee:84:b2:21:f1:66 tonys-iPhone
+Feb  8 16:47:41 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 16:47:41 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 16:47:42 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 16:47:42 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 16:47:42 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 16:47:42 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 16:52:12 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 16:52:12 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 16:52:13 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 16:52:13 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 16:52:13 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 16:52:13 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:54:09 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 16:59:47 kernel: DROP IN=ppp0 OUT= MAC= SRC=13.234.90.127 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=46 ID=54411 DF PROTO=TCP SPT=39774 DPT=80 SEQ=595361200 ACK=0 WINDOW=26883 RES=0x00 SYN URGP=0 OPT (020405B40402080A004389720000000001030307) 
+Feb  8 16:59:48 kernel: DROP IN=ppp0 OUT= MAC= SRC=13.234.90.127 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=46 ID=54412 DF PROTO=TCP SPT=39774 DPT=80 SEQ=595361200 ACK=0 WINDOW=26883 RES=0x00 SYN URGP=0 OPT (020405B40402080A00438A6C0000000001030307) 
+Feb  8 17:10:26 watchdog: Forced DDNS update (after 1 days)
+Feb  8 17:10:26 rc_service: watchdog 254:notify_rc restart_ddns
+Feb  8 17:10:26 start_ddns: update WWW.ASUS.COM update@asus.com, wan_unit 0
+Feb  8 17:10:26 inadyn[20863]: In-a-dyn version 2.7 -- Dynamic DNS update client.
+Feb  8 17:10:28 inadyn[20863]: Update forced for alias sinhledinh.asuscomm.com, new IP# 14.165.147.87
+Feb  8 17:10:29 inadyn[20863]: Updating cache for sinhledinh.asuscomm.com
+Feb  8 17:21:37 kernel: DROP IN=ppp0 OUT= MAC= SRC=193.32.127.227 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=242 ID=54321 PROTO=TCP SPT=53880 DPT=80 SEQ=591059364 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 OPT (02040218) 
+Feb  8 17:21:45 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 17:21:45 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 17:21:45 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 17:21:45 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 17:21:45 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 17:21:45 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 17:24:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 17:24:54 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 17:25:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 17:25:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 17:25:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 17:25:05 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 17:25:05 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 17:25:05 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 17:25:05 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 17:27:09 kernel: DROP IN=ppp0 OUT= MAC= SRC=59.94.180.252 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=57 ID=19276 DF PROTO=TCP SPT=32805 DPT=80 SEQ=634132220 ACK=0 WINDOW=5680 RES=0x00 SYN URGP=0 OPT (0204058C0402080A02095DB00000000001030302) 
+Feb  8 17:27:12 kernel: DROP IN=ppp0 OUT= MAC= SRC=59.94.180.252 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=57 ID=19277 DF PROTO=TCP SPT=32805 DPT=80 SEQ=634132220 ACK=0 WINDOW=5680 RES=0x00 SYN URGP=0 OPT (0204058C0402080A02095EDD0000000001030302) 
+Feb  8 17:51:39 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc DE:7E:33:B5:49:E6, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 17:56:29 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 
+Feb  8 17:56:29 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.117 fc:6b:f0:4d:7f:a6 GWIPC-5307651
+Feb  8 17:57:20 kernel: DROP IN=ppp0 OUT= MAC= SRC=216.243.31.2 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=244 ID=54321 PROTO=TCP SPT=44538 DPT=80 SEQ=1995250268 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 18:00:08 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 18:00:08 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 18:00:08 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 18:00:08 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 18:00:08 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 18:00:08 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 18:02:04 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 18:10:33 kernel: DROP IN=ppp0 OUT= MAC= SRC=95.123.41.94 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=54321 PROTO=TCP SPT=44892 DPT=80 SEQ=1068990274 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 18:41:25 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 18:41:25 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 18:41:25 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 18:41:25 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 18:41:25 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 18:41:25 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 18:51:40 kernel: DROP IN=ppp0 OUT= MAC= SRC=199.127.61.167 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=15632 PROTO=TCP SPT=56497 DPT=80 SEQ=2887233047 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 19:09:09 kernel: DROP IN=ppp0 OUT= MAC= SRC=23.148.145.28 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=61447 PROTO=TCP SPT=45596 DPT=80 SEQ=568419072 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 19:16:21 kernel: DROP IN=ppp0 OUT= MAC= SRC=88.224.194.107 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=240 ID=52384 DF PROTO=TCP SPT=2352 DPT=80 SEQ=2312999157 ACK=0 WINDOW=14600 RES=0x00 SYN URGP=0 
+Feb  8 19:42:04 kernel: DROP IN=ppp0 OUT= MAC= SRC=46.185.63.2 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=52 ID=19027 DF PROTO=TCP SPT=7953 DPT=80 SEQ=6410 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 OPT (02040218) 
+Feb  8 19:52:26 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 19:52:26 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc DE:7E:33:B5:49:E6, status: Successful (0)
+Feb  8 19:52:26 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.214 de:7e:33:b5:49:e6 
+Feb  8 19:52:26 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.214 de:7e:33:b5:49:e6 Nhu-Thach
+Feb  8 20:07:14 kernel: DROP IN=ppp0 OUT= MAC= SRC=173.212.232.62 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=246 ID=16842 PROTO=TCP SPT=45457 DPT=80 SEQ=362271437 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 20:16:05 kernel: DROP IN=ppp0 OUT= MAC= SRC=112.118.97.251 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=55 ID=27334 PROTO=TCP SPT=50036 DPT=80 SEQ=245732183 ACK=0 WINDOW=46092 RES=0x00 SYN URGP=0 
+Feb  8 20:18:13 kernel: DROP IN=ppp0 OUT= MAC= SRC=112.118.97.251 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=55 ID=47346 PROTO=TCP SPT=52596 DPT=80 SEQ=245732183 ACK=0 WINDOW=50300 RES=0x00 SYN URGP=0 
+Feb  8 20:22:37 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
+Feb  8 20:22:37 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
+Feb  8 20:22:37 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.22 d8:cb:8a:7e:80:ac 
+Feb  8 20:22:37 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.22 d8:cb:8a:7e:80:ac LedSinh
+Feb  8 20:22:44 kernel: DROP IN=ppp0 OUT= MAC= SRC=89.248.168.108 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=247 ID=54321 PROTO=TCP SPT=39705 DPT=80 SEQ=1275690517 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 20:33:57 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 20:36:45 kernel: DROP IN=ppp0 OUT= MAC= SRC=159.65.1.193 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=250 ID=22826 PROTO=TCP SPT=51065 DPT=80 SEQ=3307653677 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 20:39:35 kernel: DROP IN=ppp0 OUT= MAC= SRC=37.46.150.184 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=54321 PROTO=TCP SPT=41873 DPT=80 SEQ=318905533 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 20:41:15 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 20:41:16 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 20:41:19 syslog: WLCEVENTD wlceventd_proc_event(466): eth2: Deauth_ind EE:84:B2:21:F1:66, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 20:41:23 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth AA:4C:48:0E:4A:79, status: Successful (0)
+Feb  8 20:41:23 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc AA:4C:48:0E:4A:79, status: Successful (0)
+Feb  8 20:41:23 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) aa:4c:48:0e:4a:79 
+Feb  8 20:41:23 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.154 aa:4c:48:0e:4a:79 
+Feb  8 20:41:25 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.154 aa:4c:48:0e:4a:79 
+Feb  8 20:41:25 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.154 aa:4c:48:0e:4a:79 tonys-iPhone
+Feb  8 20:44:02 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.199 fc:6b:f0:4a:79:32 
+Feb  8 20:44:02 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.199 fc:6b:f0:4a:79:32 GWIPC-20771587
+Feb  8 20:49:45 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 20:49:54 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 20:49:54 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 20:49:57 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) 10:08:b1:cf:b4:d9 
+Feb  8 20:49:57 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 20:49:57 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 20:49:57 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 20:50:01 dnsmasq-dhcp[225]: DHCPINFORM(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 20:50:01 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 20:50:21 kernel: DROP IN=ppp0 OUT= MAC= SRC=86.144.126.18 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=51 ID=37772 PROTO=TCP SPT=16116 DPT=80 SEQ=245732183 ACK=0 WINDOW=14332 RES=0x00 SYN URGP=0 OPT (020405A0) 
+Feb  8 20:50:35 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 20:53:04 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 20:53:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 20:53:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 20:53:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 20:53:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 20:53:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 20:58:55 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc 10:08:B1:CF:B4:D9, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 20:59:35 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 20:59:35 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 20:59:35 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 20:59:35 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 20:59:39 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 20:59:39 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 20:59:46 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 20:59:46 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 21:00:03 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 21:00:03 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 21:03:25 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc 10:08:B1:CF:B4:D9, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 21:04:00 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 21:04:00 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 21:04:00 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 21:04:00 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 21:04:41 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc AA:4C:48:0E:4A:79, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 21:04:41 syslog: WLCEVENTD wlceventd_proc_event(500): eth2: Auth EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 21:04:41 syslog: WLCEVENTD wlceventd_proc_event(529): eth2: Assoc EE:84:B2:21:F1:66, status: Successful (0)
+Feb  8 21:04:42 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) ee:84:b2:21:f1:66 
+Feb  8 21:04:42 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 21:04:44 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.170 ee:84:b2:21:f1:66 
+Feb  8 21:04:44 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.170 ee:84:b2:21:f1:66 tonys-iPhone
+Feb  8 21:18:18 kernel: DROP IN=ppp0 OUT= MAC= SRC=37.46.150.184 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=54321 PROTO=TCP SPT=54959 DPT=80 SEQ=2665423280 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 21:31:29 kernel: DROP IN=ppp0 OUT= MAC= SRC=128.14.152.45 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=240 ID=57615 PROTO=TCP SPT=36478 DPT=80 SEQ=544633352 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 21:32:45 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 21:32:45 syslog: WLCEVENTD wlceventd_proc_event(510): eth1: ReAssoc 10:08:B1:CF:B4:D9, status: Successful (0)
+Feb  8 21:32:45 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.243 10:08:b1:cf:b4:d9 
+Feb  8 21:32:45 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.243 10:08:b1:cf:b4:d9 CHIEN-20150414K
+Feb  8 21:37:58 syslog: WLCEVENTD wlceventd_proc_event(481): eth1: Disassoc 10:08:B1:CF:B4:D9, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8)
+Feb  8 21:39:39 kernel: DROP IN=ppp0 OUT= MAC= SRC=68.183.25.193 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=233 ID=54321 PROTO=TCP SPT=46481 DPT=80 SEQ=1036774242 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 21:50:19 kernel: DROP IN=ppp0 OUT= MAC= SRC=223.155.47.154 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=56 ID=11335 DF PROTO=TCP SPT=12871 DPT=80 SEQ=588462019 ACK=0 WINDOW=5440 RES=0x00 SYN URGP=0 OPT (020405500402080A02D51B840000000001030302) 
+Feb  8 21:50:22 kernel: DROP IN=ppp0 OUT= MAC= SRC=223.155.47.154 DST=10.12.12.1 LEN=60 TOS=0x00 PREC=0x20 TTL=56 ID=11336 DF PROTO=TCP SPT=12871 DPT=80 SEQ=588462019 ACK=0 WINDOW=5440 RES=0x00 SYN URGP=0 OPT (020405500402080A02D51CB00000000001030302) 
+Feb  8 21:50:29 kernel: DROP IN=ppp0 OUT= MAC= SRC=37.46.150.184 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=54321 PROTO=TCP SPT=40536 DPT=80 SEQ=2655188989 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 21:53:19 kernel: DROP IN=ppp0 OUT= MAC= SRC=162.142.125.17 DST=10.12.12.1 LEN=44 TOS=0x00 PREC=0x20 TTL=42 ID=35537 PROTO=TCP SPT=25407 DPT=80 SEQ=2313074197 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 OPT (020405B4) 
+Feb  8 22:01:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 22:01:24 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:01:41 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:03:22 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 22:03:22 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 22:03:22 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 22:03:22 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 22:03:23 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 22:03:23 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 22:04:59 kernel: DROP IN=ppp0 OUT= MAC= SRC=37.46.150.184 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=54321 PROTO=TCP SPT=57148 DPT=80 SEQ=128357747 ACK=0 WINDOW=65535 RES=0x00 SYN URGP=0 
+Feb  8 22:07:12 rc_service: httpd 250:notify_rc restart_pptpd
+Feb  8 22:07:12 pptpd[9848]: MGR: Maximum of 100 connections reduced to 30, not enough IP addresses given
+Feb  8 22:07:12 pptpd[9848]: accel-pptpd-0.8.5 compiled for pppd-2.4.5, linux-2.6.36.4
+Feb  8 22:07:12 bcrelay[9850]: Running as child
+Feb  8 22:07:12 pptpd[9849]: MGR: Manager process started
+Feb  8 22:07:12 pptpd[9849]: MGR: Maximum of 30 connections available
+Feb  8 22:07:13 nat: apply nat rules (/tmp/nat_rules_ppp0_eth0)
+Feb  8 22:07:14 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Disassociated due to inactivity (4)
+Feb  8 22:07:35 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:07:40 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind FA:CC:E7:A4:0C:6A, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:10:03 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 22:10:04 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc FA:CC:E7:A4:0C:6A, status: Successful (0)
+Feb  8 22:10:04 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) fa:cc:e7:a4:0c:6a 
+Feb  8 22:10:04 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 22:10:04 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a 
+Feb  8 22:10:04 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.36 fa:cc:e7:a4:0c:6a Galaxy-Note9
+Feb  8 22:13:09 kernel: DROP IN=ppp0 OUT= MAC= SRC=103.206.100.76 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=245 ID=26063 DF PROTO=TCP SPT=7203 DPT=80 SEQ=3363194039 ACK=0 WINDOW=14600 RES=0x00 SYN URGP=0 
+Feb  8 22:15:05 syslog: WLCEVENTD wlceventd_proc_event(500): eth1: Auth C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 22:15:05 syslog: WLCEVENTD wlceventd_proc_event(529): eth1: Assoc C0:48:E6:BF:32:E0, status: Successful (0)
+Feb  8 22:15:05 dnsmasq-dhcp[225]: DHCPDISCOVER(br0) c0:48:e6:bf:32:e0 
+Feb  8 22:15:05 dnsmasq-dhcp[225]: DHCPOFFER(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 22:15:05 dnsmasq-dhcp[225]: DHCPREQUEST(br0) 10.12.12.231 c0:48:e6:bf:32:e0 
+Feb  8 22:15:05 dnsmasq-dhcp[225]: DHCPACK(br0) 10.12.12.231 c0:48:e6:bf:32:e0 Samsung
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Deauthenticated because sending station is leaving (or has left) IBSS or ESS (3)
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:17:00 syslog: WLCEVENTD wlceventd_proc_event(466): eth1: Deauth_ind C0:48:E6:BF:32:E0, status: 0, reason: Class 3 frame received from nonassociated station (7)
+Feb  8 22:35:28 kernel: DROP IN=ppp0 OUT= MAC= SRC=45.146.164.211 DST=10.12.12.1 LEN=40 TOS=0x00 PREC=0x20 TTL=243 ID=64208 PROTO=TCP SPT=57970 DPT=80 SEQ=2831509975 ACK=0 WINDOW=1024 RES=0x00 SYN URGP=0 
+Feb  8 22:43:26 rc_service: httpd 250:notify_rc start_release_note RT-AC68U 386_1_0
